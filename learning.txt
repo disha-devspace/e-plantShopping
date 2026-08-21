@@ -1,0 +1,7 @@
+I am learning Git and GitHub.
+
+Today I learned:
+- Repository
+- README
+- Commit
+- Main branch
