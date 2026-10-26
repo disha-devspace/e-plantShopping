@@ -5,7 +5,7 @@ function AboutUs() {
     <div className="about-us">
       <h1>About Us</h1>
       <p>
-        Vision Technologies is a software company focused on building
+      Paradise Nursery is a software company focused on building
         simple, reliable and user-friendly web applications.
       </p>
 
