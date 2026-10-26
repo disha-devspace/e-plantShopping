@@ -1,1 +1,42 @@
+/* Paradise Nursery - Landing Page Styles */
 
+.landing-page {
+  min-height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1416879595882-3373a0480b5b?auto=format&fit=crop&w=1600&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+.landing-page h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+.landing-page p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.get-started-btn {
+  margin-top: 20px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  background-color: #2e7d32;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.get-started-btn:hover {
+  background-color: #1b5e20;
+}
