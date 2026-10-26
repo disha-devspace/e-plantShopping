@@ -1,14 +1,20 @@
-# vision-project
-My Journey Towards Final Year Project
 # Vision Project
 
-## About
-This repository is my learning space for Git and GitHub.
+## Project Name
+Vision Project
 
-## What I am Learning
-- Git basics
-- GitHub repositories
-- Commits
-- Branches
-- Pull requests
-- Project collaboration
+## Description
+A web application built with React that showcases the vision and details of our company.
+
+## Features
+- Responsive user interface
+- About Us page with company details
+- Clean, component-based structure
+
+## Tech Stack
+- React
+- JavaScript (JSX)
+- HTML & CSS
+
+## Author
+disha-devspace
