@@ -40,3 +40,34 @@
 .get-started-btn:hover {
   background-color: #1b5e20;
 }
+.landing-content {
+  padding: 20px;
+}
+
+.divider {
+  width: 80px;
+  height: 3px;
+  background-color: #ffffff;
+  margin: 10px auto 20px;
+}
+
+.aboutus-container {
+  background-color: rgba(0, 0, 0, 0.55);
+  padding: 20px 30px;
+  margin-top: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  text-align: left;
+}
+
+.landing-page.fade-out {
+  display: none;
+}
+
+.product-list-container {
+  display: none;
+}
+
+.product-list-container.visible {
+  display: block;
+}
