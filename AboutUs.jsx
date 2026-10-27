@@ -2,7 +2,7 @@ import React from "react";
 
 function AboutUs() {
   return (
-    <div className="about-us">
+    <div className="about-us-container">
       <h1>About Us</h1>
       <p>
         Paradise Nursery is an online plant shop that brings fresh,
