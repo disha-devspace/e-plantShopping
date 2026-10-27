@@ -36,8 +36,8 @@ const plantsArray = [
       { name: "Cactus", image: img("photo-1459411552884-841db9b3cc2a"), description: "Thrives on minimal watering and sunlight.", cost: "$10" },
       { name: "ZZ Plant", image: img("photo-1632207691143-643e2a9a9361"), description: "Tolerates low light and irregular watering.", cost: "$25" },
       { name: "Jade Plant", image: img("photo-1509937528035-ad76254b0356"), description: "Succulent that stores water in its leaves.", cost: "$16" },
-      { name: "Pothos", image: img("photo-1572688484438-313a6e50c333"), description: "Hardy trailing vine that grows almost anywhere.", cost: "$13" },
-      { name: "Echeveria", image: img("photo-1509423350716-97f9360b4e09"), description: "Compact rosette succulent, very easy to care for.", cost: "$11" },
+      { name: "Pothos", image: img("photo-1485955900006-10f4d324d411"), description: "Hardy trailing vine that grows almost anywhere.", cost: "$13" },
+      { name: "Echeveria", image: img("photo-1463320726281-696a485928c7"), description: "Compact rosette succulent, very easy to care for.", cost: "$11" },
     ],
   },
 ];
@@ -46,14 +46,14 @@ function ProductList({ onHomeClick }) {
   const dispatch = useDispatch();
   const cartItems = useSelector((state) => state.cart.items);
   const [showCart, setShowCart] = useState(false);
-  const [addedToCart, setAddedToCart] = useState({});
 
   const calculateTotalQuantity = () =>
     cartItems.reduce((total, item) => total + item.quantity, 0);
 
+  const isInCart = (name) => cartItems.some((item) => item.name === name);
+
   const handleAddToCart = (plant) => {
     dispatch(addItem(plant));
-    setAddedToCart((prev) => ({ ...prev, [plant.name]: true }));
   };
 
   return (
@@ -95,10 +95,10 @@ function ProductList({ onHomeClick }) {
                     <p className="product-price">{plant.cost}</p>
                     <button
                       className="product-button"
-                      disabled={addedToCart[plant.name]}
+                      disabled={isInCart(plant.name)}
                       onClick={() => handleAddToCart(plant)}
                     >
-                      {addedToCart[plant.name] ? "Added to Cart" : "Add to Cart"}
+                      {isInCart(plant.name) ? "Added to Cart" : "Add to Cart"}
                     </button>
                   </div>
                 ))}
